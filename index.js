@@ -19,7 +19,7 @@ app.post("/post",(req,res)=>{
 	conn.query("insert into mokkabase (name,mokkka) values ($1,$2)",[name,mokka],(err)=>{
        if (err) { console.log("Error in updatting") }
        	else { console.log("added successfully") }
-       	res.redirect("http://localhost:3000/")
+       	res.redirect("https://frontend-for-funny-site.vercel.app/")
 	})
 })
 app.get("/get",(req,res)=>{
